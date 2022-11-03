@@ -46,5 +46,31 @@ body .right {
   height: 100vh;
   background-color: rgb(9, 14, 17);
 }
+body .right .log-in {
+  display: flex;
+  gap: 7px;
+}
+body .right .red {
+  color: rgb(237, 57, 60);
+}
+body .right .red:hover {
+  color: whitesmoke;
+}
+body .right .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  height: 50px;
+}
+body .right .footer i {
+  transition: 0.3s;
+  margin-left: 15px;
+}
+body .right .footer i:hover {
+  transform: scale(1.2);
+}
 
 /*# sourceMappingURL=style.css.map */

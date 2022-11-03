@@ -53,6 +53,39 @@ body {
         width: 60%;
         height: 100vh;
         background-color: rgb(9,14,17);
+
+        .log-in{
+            display: flex;
+            gap: 7px;
+        }
+
+        .red {
+            color: rgb(237,57,60);
+        }
+
+        .red:hover{
+            color: whitesmoke;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+            height: 50px;
+        }
+        
+        .footer i {
+            transition: 0.3s;
+            margin-left: 15px;
+        }
+        
+        .footer i:hover {
+            transform: scale(1.2);
+        }
     }
 
 }
+
