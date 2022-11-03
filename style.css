@@ -33,43 +33,66 @@ body .left .ref {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 380px;
-  font-size: 11px;
+  margin-top: 400px;
+  font-size: 9px;
   opacity: 0.8;
+}
+body .left .ref p {
+  margin: 0;
 }
 body .left .ref a {
   text-decoration: none;
   color: whitesmoke;
 }
 body .right {
-  padding-left: 35px;
   width: 60%;
   height: 100vh;
   background-color: rgb(9, 14, 17);
+  padding: 0;
+}
+body .right .rightside {
+  padding-left: 25px;
 }
 body .right .text {
   margin-top: 50px;
   padding-right: 10px;
 }
-body .right .input {
-  display: flex;
-  flex-flow: row wrap;
+body .right .form {
+  width: 100%;
+  margin-top: 80px;
+  padding: 25px 0px;
+  background-color: rgb(11, 18, 21);
+  box-shadow: 0 8px 6px -6px rgb(15, 25, 29);
+}
+body .right .form .input {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 15px;
   width: 40%;
   font-size: 1rem;
   text-transform: uppercase;
   opacity: 65%;
 }
-body .right .input input {
+body .right .form .input input {
   background-color: rgb(2, 2, 2);
   border: 1px solid rgb(77, 77, 77);
   border-radius: 3px;
   color: white;
+  width: 100%;
 }
-body .right .input label {
+body .right .form .input input:valid {
+  border-color: rgb(77, 77, 77);
+}
+body .right .form .input input:invalid {
+  border-color: rgb(237, 57, 60);
+}
+body .right .form .input label {
   display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
 }
 body .right button {
-  margin-top: 60px;
+  margin-top: 40px;
   box-shadow: none;
   border-radius: 8px;
   height: 55px;
@@ -85,6 +108,7 @@ body .right button:hover {
   background-color: rgb(237, 57, 60);
 }
 body .right .log-in {
+  margin-top: 20px;
   display: flex;
   gap: 7px;
 }

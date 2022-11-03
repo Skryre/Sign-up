@@ -41,9 +41,12 @@ body {
         }
         .ref{
             @include flexCenter();
-            margin-top: 380px;
-            font-size: 11px;
+            margin-top: 400px;
+            font-size: 9px;
             opacity: 0.8;
+            p {
+            margin: 0;
+            }
             a{
             text-decoration: none;
             color: whitesmoke;
@@ -52,36 +55,61 @@ body {
     }
 
     .right {
-        padding-left: 35px;
         width: 60%;
         height: 100vh;
         background-color: $black;
+        padding: 0;
+
+        .rightside {
+            padding-left: 25px;
+        }
 
         .text {
             margin-top: 50px;
             padding-right: 10px;
         }
 
-        .input {
-            display: flex;
-            flex-flow: row wrap;
-            width: 40%;
-            font-size: 1rem;
-            text-transform: uppercase;
-            opacity: 65%;
-            input {
-                background-color: rgb(2, 2, 2);
-                border: 1px solid rgb(77, 77, 77);
-                border-radius: 3px;
-                color: white;
-            }
-            label {
-                display: block;
+        .form {
+            width: 100%;
+            margin-top: 80px;
+            padding: 25px 0px;
+            background-color: rgb(11, 18, 21);
+            box-shadow: 0 8px 6px -6px rgb(15, 25, 29);
+
+            .input {
+                display: inline-block;
+                margin-right: 15px;
+                margin-top: 15px;
+                width: 40%;
+                font-size: 1rem;
+                text-transform: uppercase;
+                opacity: 65%;
+                input {
+                    background-color: rgb(2, 2, 2);
+                    border: 1px solid rgb(77, 77, 77);
+                    border-radius: 3px;
+                    color: white;
+                    width: 100%;
+                }
+
+                input:valid{
+                    border-color: rgb(77, 77, 77);
+                }
+
+                input:invalid{
+                    border-color: $red;
+                }
+
+                label {
+                    display: block;
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                }
             }
         }
 
         button {
-            margin-top: 60px;
+            margin-top: 40px;
             box-shadow: none;
             border-radius: 8px;
             height: 55px;
@@ -99,6 +127,7 @@ body {
         }
 
         .log-in{
+            margin-top: 20px;
             display: flex;
             gap: 7px;
             .red {
