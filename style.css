@@ -42,18 +42,57 @@ body .left .ref a {
   color: whitesmoke;
 }
 body .right {
+  padding-left: 35px;
   width: 60%;
   height: 100vh;
   background-color: rgb(9, 14, 17);
+}
+body .right .text {
+  margin-top: 50px;
+  padding-right: 10px;
+}
+body .right .input {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 65%;
+}
+body .right .input input {
+  background-color: rgb(2, 2, 2);
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 3px;
+  color: white;
+}
+body .right .input label {
+  display: block;
+}
+body .right button {
+  margin-top: 60px;
+  box-shadow: none;
+  border-radius: 8px;
+  height: 55px;
+  width: 240px;
+  border: 1px solid rgb(237, 57, 60);
+  background-color: rgb(9, 14, 17);
+  color: rgb(237, 57, 60);
+  font-size: 18px;
+  font-style: bold;
+}
+body .right button:hover {
+  color: rgb(9, 14, 17);
+  background-color: rgb(237, 57, 60);
 }
 body .right .log-in {
   display: flex;
   gap: 7px;
 }
-body .right .red {
+body .right .log-in .red {
   color: rgb(237, 57, 60);
+  cursor: pointer;
 }
-body .right .red:hover {
+body .right .log-in .red:hover {
   color: whitesmoke;
 }
 body .right .footer {

@@ -2,6 +2,8 @@
 
 $systemUi: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $white: whitesmoke;
+$red: rgb(237,57,60);
+$black: rgb(9,14,17);
 
 @mixin flexCenter() {
     display: flex;
@@ -50,21 +52,63 @@ body {
     }
 
     .right {
+        padding-left: 35px;
         width: 60%;
         height: 100vh;
-        background-color: rgb(9,14,17);
+        background-color: $black;
+
+        .text {
+            margin-top: 50px;
+            padding-right: 10px;
+        }
+
+        .input {
+            display: flex;
+            flex-flow: row wrap;
+            width: 40%;
+            font-size: 1rem;
+            text-transform: uppercase;
+            opacity: 65%;
+            input {
+                background-color: rgb(2, 2, 2);
+                border: 1px solid rgb(77, 77, 77);
+                border-radius: 3px;
+                color: white;
+            }
+            label {
+                display: block;
+            }
+        }
+
+        button {
+            margin-top: 60px;
+            box-shadow: none;
+            border-radius: 8px;
+            height: 55px;
+            width: 240px;
+            border: 1px solid $red;
+            background-color: $black;
+            color: $red;
+            font-size: 18px;
+            font-style: bold;
+        }
+
+        button:hover {
+            color: $black;
+            background-color: $red;
+        }
 
         .log-in{
             display: flex;
             gap: 7px;
-        }
-
-        .red {
-            color: rgb(237,57,60);
-        }
-
-        .red:hover{
-            color: whitesmoke;
+            .red {
+                color: rgb(237,57,60);
+                cursor: pointer;
+            }
+    
+            .red:hover{
+                color: whitesmoke;
+            }
         }
 
         .footer {
