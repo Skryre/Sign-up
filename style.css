@@ -1,5 +1,50 @@
-:root {
-  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Silkscreen&display=swap");
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  color: whitesmoke;
+}
+body .content {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+body .left {
+  width: 40%;
+  height: 100vh;
+  background: url(/Sign-up/valentin-beauvais-9Wi7WOZHGWo-unsplash.jpg) center;
+  background-repeat: no-repeat;
+}
+body .left .img {
+  background-color: rgba(9, 14, 17, 0.45);
+  height: 180px;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 190px;
+}
+body .left .img img {
+  height: 150px;
+}
+body .left .ref {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 380px;
+  font-size: 11px;
+  opacity: 0.8;
+}
+body .left .ref a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+body .right {
+  width: 60%;
+  height: 100vh;
+  background-color: rgb(9, 14, 17);
 }
 
 /*# sourceMappingURL=style.css.map */

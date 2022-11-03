@@ -1,5 +1,58 @@
-:root {
-    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Silkscreen&display=swap');
+
+$systemUi: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$white: whitesmoke;
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-dde
+body { 
+    font-family: $systemUi;
+    margin: 0;
+    color: whitesmoke;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .left {
+        width: 40%;
+        height: 100vh;
+        background: url(/Sign-up/valentin-beauvais-9Wi7WOZHGWo-unsplash.jpg) center;
+        background-repeat: no-repeat;
+        .img{
+            background-color: rgb(9,14,17, 0.45);
+            height: 180px;
+            width: 100%;
+            font-size: 25px;
+            @include flexCenter();
+            gap: 15px;
+            margin-top: 190px;
+            img{
+            height: 150px;
+            }
+        }
+        .ref{
+            @include flexCenter();
+            margin-top: 380px;
+            font-size: 11px;
+            opacity: 0.8;
+            a{
+            text-decoration: none;
+            color: whitesmoke;
+            }
+        }
+    }
+
+    .right {
+        width: 60%;
+        height: 100vh;
+        background-color: rgb(9,14,17);
+    }
+
+}
