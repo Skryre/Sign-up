@@ -96,6 +96,10 @@ body {
                     border-color: rgb(77, 77, 77);
                 }
 
+                input::placeholder{
+                    border-color: rgb(77, 77, 77);
+                }
+
                 input:invalid{
                     border-color: $red;
                 }
