@@ -83,8 +83,8 @@ body .right .form .input input {
 body .right .form .input input:valid {
   border-color: rgb(77, 77, 77);
 }
-body .right .form .input input::placeholder {
-  border-color: rgb(77, 77, 77);
+body .right .form .input input:invalid:placeholder-shown {
+  border: 1px solid rgb(77, 77, 77);
 }
 body .right .form .input input:invalid {
   border-color: rgb(237, 57, 60);
